@@ -8,6 +8,14 @@
 //  Created by Casey Rock on 11/13/13.
 //  Copyright (c) 2013 Casey Rock. All rights reserved.
 
+$(document).ready(function () {
+    $('.playerhand td').click(function(){
+        $(this).addClass('selected');
+        $('.playerhand td').not(this).removeClass('selected');
+    });
+});
+
+
 //=============================================================================
 // Card Object
 //=============================================================================

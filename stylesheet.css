@@ -1,3 +1,7 @@
 div {
             display:inline-block;
-        }
+}
+
+.selected{
+    border: 2px solid #ffff00;
+}
