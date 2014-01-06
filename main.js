@@ -8,13 +8,28 @@
 //  Created by Casey Rock on 11/13/13.
 //  Copyright (c) 2013 Casey Rock. All rights reserved.
 
+
+
+
 $(document).ready(function () {
     $('.playerhand td').click(function(){
         $(this).addClass('selected');
         $('.playerhand td').not(this).removeClass('selected');
     });
+
+    $('.gameboard td').click(function(){
+        if($(this).hasClass('cardplaced')){}
+        else{
+            $('.selected').appendTo($(this));
+            $('.selected').removeClass('selected');
+            $(this).addClass('cardplaced');
+        }
+    });
 });
 
+function cardFight(card1, card2){
+	
+}
 
 //=============================================================================
 // Card Object

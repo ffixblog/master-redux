@@ -5,3 +5,13 @@ div {
 .selected{
     border: 2px solid #ffff00;
 }
+
+.gameboard{
+    table-layout: fixed;
+
+}
+
+.gameboard tr, td{
+    border: 1px solid black;
+    height: 111px;
+}
